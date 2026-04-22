@@ -32,7 +32,7 @@ def chunk_pages(pages: List[Dict[str, Any]], doc_id: str) -> List[Dict[str, Any]
                     "text": chunk_text.strip(),
                     "page": page_num,
                     "chunk_index": chunk_index,
-                    "metadata": {
+                    "chunk_metadata": {
                         "doc_id": doc_id,
                         "page": page_num,
                         "chunk_index": chunk_index,

@@ -55,7 +55,7 @@ class Chunk(Base):
     text = Column(Text, nullable=False)
     page = Column(Integer, nullable=True)
     chunk_index = Column(Integer, nullable=False)
-    metadata = Column(JSON, default=dict)
+    chunk_metadata = Column(JSON, default=dict)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
     document = relationship("Document", back_populates="chunks")

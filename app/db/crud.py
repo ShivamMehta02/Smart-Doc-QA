@@ -49,7 +49,7 @@ async def delete_document(db: AsyncSession, doc_id: str):
 async def create_chunks_bulk(db: AsyncSession, doc_id: str, chunks_data: list[dict]):
     chunks = [
         Chunk(doc_id=uuid.UUID(doc_id), text=c["text"], page=c.get("page"),
-              chunk_index=c["chunk_index"], metadata=c.get("metadata", {}))
+              chunk_index=c["chunk_index"], chunk_metadata=c.get("metadata", {}))
         for c in chunks_data
     ]
     db.add_all(chunks)
