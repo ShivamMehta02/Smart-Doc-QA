@@ -14,7 +14,6 @@ celery==5.3.4
 redis==5.0.1
 
 # AI & Processing
-fitz==0.0.1.dev2
 PyMuPDF==1.23.5
 python-docx==1.1.0
 sentence-transformers==2.2.2
