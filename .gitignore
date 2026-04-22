@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data
+data/
+faiss/
+*.index
+*.meta.npy
+
+# Docker
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
